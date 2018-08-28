@@ -2,23 +2,25 @@
 <html lang="en-ca">
 <head>
 	<meta charset="utf-8">
-	<title>Dong's Personal Site</title>
+	<title>Dong's Personal Site (title of default layout for the site)</title>
+	<link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
 </head>
 <body>
 
 
 <header>
-	<h1>Planets of the Universe</h1>
-	<nav>
-		<ul>
-			<li><a href="{{site.baseurl}}/index.html">home</a></li>
-			<li><a href="{{site.baseurl}}/news.html">News Page</a></li>
-		</ul>
-	</nav>
+	<h1>Planets of the Universe (header title for default layout)</h1>
+    {% include nav.html %}
 </header>	
 
 
 {{content}}
+
+
+<footer>
+	{% include nav.html %}
+	<p> © 2018 Dong Liu Personal Site based on Jekyll GP</p>
+</footer>
 
 </body>
 </html>
