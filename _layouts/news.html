@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<meta charset="utf-8">
+	<title>Dong's Personal Site (title of default layout for the site)</title>
+	<link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
+</head>
+<body>
+
+
+<header>
+	<h1>Planets of the Universe (header title for default layout)</h1>
+    {% include nav.html navclass='nav-top'%}
+</header>	
+
+
+{{content}}
+
+
+<footer>
+	{% include nav.html navclass='nav-bottom'%}
+	<p> © 2018 Dong Liu Personal Site based on Jekyll GP</p>
+</footer>
+
+</body>
+</html>
